@@ -1,26 +1,186 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Zomato - Largest Food Delivery Network</title>
+</head>
 
-        <div class="navbar_brand">
-           <img src="img/logo.png" alt="zomato_logo" class="navbar_logo">
+<body>
+  <header>
+    <nav class="navbar">
+
+      <div class="navbar_brand">
+        <img src="img/logo.png" alt="zomato_logo" class="navbar_logo">
+      </div>
+      <div class="navbar_nav_items">
+        <div class="nav_item">
+          <button class="button_primary hide_mobile">Order Food</button>
+          <button class="button_primary hamburger_menu mobile_only" id="hamburgermenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
         </div>
-        <div class="navbar_nav_items">
-          <button class="nav_item">Order Food</button>
+      </div>
+    </nav>
+
+    <div class="mobile_navbar_items mobile_only hamburger_menu_close">
+      <ul>
+        <li class="nav_item">Products</li>
+        <li class="nav_item">Restaurants</li>
+        <li class="nav_item">Pricing</li>
+        <li class="nav_item">About Us</li>
+      </ul>
+
+      <div class="nav_item">
+        <button class="button_primary">Order Food</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero section -->
+    <section class="hero_container">
+      <div class="hero_image_container">
+        <img src="img/hero.jpg" alt="Food-image" class="hero_img">
+      </div>
+      <br>
+      <br>
+      <div class="description">
+        <h1 class="hero_text">Order food from favourite restaurants near you.</h1>
+        <button class="button_primary" style="margin: 10px 0 0 -4px;">Order Now</button>
+      </div>
+    </section>
+
+    <section class="title_text">
+      <div class="title_text">
+        <p>
+          Your food will be prepared safely with an experienced chef, without
+          compromising on the quality and hygiene.
+        </p>
+      </div>
+    </section>
+
+    <!-- Explore Menu -->
+    <section class="explore_menu">
+      <h1 class="menu_text">Explore Our Menu</h1>
+      <div class="menu_gradientbg">
+
+      </div>
+      <div class="menu_lists">
+        <!-- Burger -->
+        <div class="food_card">
+          <div class="f_card_img_container">
+            <img src="img/burger.jpg" alt="burger" class="food_img">
+          </div>
+          <div class="f_card_details">
+            <h3 class="food_title">Burgers</h3>
+            <p>Burger King, McDonald's, Burger Place <span style="color: rgb(255, 42, 0);">+3</span></p>
+          </div>
         </div>
-        
-      </nav>
-    </header>
-      </body>
+
+        <!-- Pizza -->
+        <div class="food_card" id="pizza_card">
+          <div class="f_card_img_container">
+            <img src="img/pizza.jpg" alt="Pizza" class="food_img">
+          </div>
+          <div class="f_card_details">
+            <h3 class="food_title">Pizza</h3>
+            <p>Domino's Pizza, Pizza Hut, Pizza Corner <span style="color: rgb(255, 42, 0);">+3</span></p>
+          </div>
+        </div>
+
+        <!-- Ice-cream -->
+        <div class="food_card">
+          <div class="f_card_img_container">
+            <img src="img/ice-cream.jpg" alt="Ice-cream" class="food_img">
+          </div>
+          <div class="f_card_details">
+            <h3 class="food_title">Ice-Cream</h3>
+            <p>Amul Ice-Cream, Baskin Robins, Vadilal <span style="color: rgb(255, 42, 0);">+3</span></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="food_list_view_more">View More</div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="restaurant_container">
+      <div class="restaurant_text">
+        <h4 class="menu_text">Order From 100s of Restaurants</h4>
+      </div>
+      <div class="restaurant_list_images">
+        <div class="restaurant_row_1">
+          <div>
+            <img src="img/rest0.jpg" alt="Restaurant1" class="rest1">
+          </div>
+          <img src="img/rest1.jpg" alt="Restaurant2" class="rest2">
+        </div>
+
+        <div class="restaurant_row_2">
+          <div>
+            <img src="img/rest2.jpg" alt="Restaurant3" class="rest4">
+          </div>
+          <img src="img/rest3.jpg" alt="Restaurant4" class="rest4">
+        </div>
+      </div>
+    </section>
+
+    <!-- Email-section -->
+    <section class="email_subcribe_container">
+      <div>
+        <h1 class="menu_text">Stay Updated</h1>
+        <div class="email_subcribe_input_field">
+          <div>
+            <input type="email" placeholder="abc@email.com" class="email_input" />
+          </div>
+          <button class="button_primary">Get Updates</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote-section -->
+    <section class="quote_container">
+      <div class="quote_image_overlay"></div>
+      <h3 class="quote_image_text">
+        When a man's stomach is full it makes no difference whether he is rich
+        or poor.
+      </h3>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <img src="img/logo.png" alt="logo" />
+    <br>
+    <br>
+    <ul>
+      <li style="font-size: large;cursor: pointer;">Pricing</li>
+      <li style="font-size: large;cursor: pointer;">Terms & condition</li>
+      <li style="font-size: large;cursor: pointer;">Partnership</li>
+      <li style="font-size: large;cursor: pointer;">Career</li>
+      <li style="font-size: large;cursor: pointer;">Contact Us</li>
+    </ul>
+  </footer>
+  <script>
+    const hamburgermenu = document.getElementById("hamburgermenu");
+    const mobileNavDropDown = document.querySelector(".mobile_navbar_items");
+    window.addEventListener("click", () => {
+      if (mobileNavDropDown.classList.contains("hamburger_menu_close"))
+        return mobileNavDropDown.classList.remove("hamburger_menu_close");
+      return mobileNavDropDown.classList.add("hamburger_menu_close");
+    });
+  </script>
+</body>
+
 </html>
